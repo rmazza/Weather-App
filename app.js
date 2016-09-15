@@ -20,19 +20,20 @@ $(document).ready(function() {
     $("#sub").click(function() {
     
             $("#fiveDayForecast").empty();
-            var url = "";
+            var conditionsURL = "";
 
             var selectedCity = validate($("#userInput").val());
 
             if(selectedCity.length > 1){
-                url +=  api + selectedCity[1] + "/" + selectedCity[0] + format;
+                conditionsURL +=  api + selectedCity[1] + "/" + selectedCity[0] + format;
             }else{
-                url += api + selectedCity[0] + format;
+                conditionsURL += api + selectedCity[0] + format;
             }
 
-            $.getJSON(url, function(data){
-                    var city = data.current_observation.display_location.city;
+            $.getJSON(conditionsURL, function(data){
+                    var city = data.current_observation.display_location.full;
                     var currentDay = weekDay[d.getDay()];
+                    var currentImg = "<img src='" + data.current_observation.icon_url + "'>"
 
                    $("#currentCity").html(city);
 
@@ -40,7 +41,7 @@ $(document).ready(function() {
 
                    $("#currentTemp").html(data.current_observation.temperature_string);
 
-                   $("#currentWeatherIcon").html("<img src='" + data.current_observation.icon_url + "'>")
+                   $("#currentWeatherIcon").html(currentImg);
 
             });
     });

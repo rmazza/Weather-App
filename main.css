@@ -29,13 +29,13 @@ header span {
 .left-header{
     float: left;
     width: 33%;
-    height: 50px;
+    height: 60px;
 }
 
-.right-header{
-    float:left;
+.right-header {
+    float: left;
     width: 67%;
-    height: 50px;
+    height: 60px;
 }
 
 .searchCity {
@@ -54,4 +54,10 @@ span#currentDay {
     display: inline-block;
     font-size: 14px;
     width: 200px;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
