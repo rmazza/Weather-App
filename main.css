@@ -1,0 +1,57 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    clear:both;
+    width: 80%;
+    margin: 70px auto;
+}
+
+.header-container {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    background-color: #f8f8f8;
+}
+
+header {
+    height: 60px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #f8f8f8;;
+}
+
+header span {
+    font-size: 40px;
+}
+
+.left-header{
+    float: left;
+    width: 33%;
+    height: 50px;
+}
+
+.right-header{
+    float:left;
+    width: 67%;
+    height: 50px;
+}
+
+.searchCity {
+    float:right;
+}
+
+span#currentCity {
+    font-size: 40px;
+}
+
+span#currentDay {
+    margin: 0 0 0 20px;
+}
+
+.fiveBox {
+    display: inline-block;
+    font-size: 14px;
+    width: 200px;
+}
