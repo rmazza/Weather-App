@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="assets/main.css" />
 </head>
 
-<body>
+<body ng-app='weather-app'>
 
-    <div class="header-container">
+<div ng-controller="weatherDataConroller">
+    {{name}}
+</div>
+
+    <!--<div class="header-container">
         <header>
             <div class="left-header">
                 <span>Weather</span>
@@ -28,12 +32,14 @@
     <div class="container">
         <span id="currentCity"></span><span id="currentDay"></span>
         <span id="currentWeatherIcon"></span><span id="currentTemp"></span>
-    </div>
+    </div>-->
 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-    <script src="https//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="js/weather.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="../module/weather-app.js"></script>
+    <script src="../controllers/weatherController.js"></script>
 </body>
 
 </html>
