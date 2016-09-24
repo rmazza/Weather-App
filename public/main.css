@@ -18,12 +18,8 @@ header search-directive.col-xs-12.col-sm-8.col-md-8 form {
   text-align: center;
 }
 header input[type="text"] {
-  width: 210px;
   height: 30px;
   text-align: center;
-}
-header input[type="submit"] {
-  display: none;
 }
 .clearfix:after {
   content: "";
@@ -44,11 +40,9 @@ header input[type="submit"] {
     text-align: right;
   }
   header input[type="text"] {
-    width: 200px;
     height: 30px;
   }
   header input[type="submit"] {
-    display: initial;
     height: 30px;
   }
 }
@@ -64,11 +58,9 @@ header input[type="submit"] {
     text-align: right;
   }
   header input[type="text"] {
-    width: 200px;
     height: 30px;
   }
   header input[type="submit"] {
-    display: initial;
     height: 30px;
   }
 }
@@ -84,11 +76,9 @@ header input[type="submit"] {
     text-align: right;
   }
   header input[type="text"] {
-    width: 200px;
     height: 30px;
   }
   header input[type="submit"] {
-    display: initial;
     height: 30px;
   }
 }
