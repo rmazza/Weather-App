@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const port = process.env.PORT || 3000;
 
 app.use('/js',express.static(__dirname + '/js'));
 app.use('/assets', express.static(__dirname + '/public'));
@@ -15,7 +16,7 @@ app.get('/', (req,res) => {
     res.sendFile(__dirname + '/views/index.html');
 });
 
-app.listen(3000, (err) =>{
+app.listen(port, (err) =>{
     if(err){
         console.log(err);
     }
