@@ -9,6 +9,7 @@ app.use('/controllers',express.static(__dirname + '/controllers'));
 app.use('/directives',express.static(__dirname + '/directives'));
 app.use('/node_modules',express.static(__dirname + '/node_modules'));
 app.use('/directives',express.static(__dirname + '/directives'));
+app.use('/services',express.static(__dirname + '/services'));
 
 app.get('/', (req,res) => {
     res.sendFile(__dirname + '/views/index.html');

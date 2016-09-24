@@ -1,2 +1,4 @@
-<input type="text" id="userInput" placeholder="Enter city name or zip code">
-<button id="sub">search</button>
+<form name="searchForm">
+    <input type="text" ng-model="searchValue" name="val" placeholder="Enter city name or zip code">
+    <input class="btn btn-primary" type='submit' value='search' ng-click="getSearch(searchValue)"/>
+</form>
