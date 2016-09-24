@@ -1,10 +1,11 @@
 angular.module('weather-app')
     .controller('searchController', ['$scope', '$log', 'weatherService', function ($scope, $log, weatherService) {
+        //test
 
         $scope.weatherData = {};
         $scope.displayLocation = {};
         $scope.searchValue = '';
-        
+
         $scope.getSearch = function (city) {
 
             weatherService.getToday(city)
