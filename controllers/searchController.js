@@ -6,12 +6,9 @@ angular.module('weather-app')
         $scope.city = '';
         $scope.state = '';
 
-        $scope.setSearchValue = function (val) {
-            $scope.searchValue = val;
-        };
-
         $scope.getSearch = function (city) {
-            weatherService.get(city)
+
+            weatherService.getToday(city)
                 .then(function (response) {
 
                     $scope.weatherData = response.data;
@@ -20,8 +17,10 @@ angular.module('weather-app')
 
 
                     $scope.searchValue = '';
+
                 }, function (response) {
                     $log.log(response.data);
                 });
-        }
+        };
+        
     }]);

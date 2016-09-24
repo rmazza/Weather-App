@@ -5,7 +5,7 @@ angular.module('weather-app')
         const format = ".json";
 
         return {
-            get: function (searchVal) {
+            getToday: function (searchVal) {
                 return $http(
                     {
                         method: 'GET',

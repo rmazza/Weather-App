@@ -17,9 +17,10 @@
             <search-directive class="col-xs-12 col-sm-8 col-md-8 text-right"></search-directive>
         </header>
     </div>
-    
-    <h1> {{city}}</h1>
-    <h1> {{state}}</h1>
+
+    <div class="container">
+        <todays-weather></todays-weather>
+    </div>
 
 </div>
     <script src="../node_modules/angular/angular.js"></script>
@@ -32,6 +33,7 @@
     <script src="../services/weather-service.js"></script>
     <script src="../directives/logo-directive.js"></script>
     <script src="../directives/search-directive.js"></script>
+    <script src="../directives/todaysWeather-directive.js"></script>
 </body>
 
 </html>

@@ -1,6 +1,6 @@
-@screen-sm-min: 720px;
-@screen-md-min: 900px;
-@screen-lg-min: 1020px;
+@screen-sm-min: 768px;
+@screen-md-min: 992px;
+@screen-lg-min: 1200px;
 
 @mainFontFamily: 'Open Sans', sans-serif;
 
@@ -11,10 +11,29 @@ body {
 header {
     width: 100%;
     margin: 0 auto;
-}
 
-search-directive.col-xs-12.col-sm-8.col-md-8 {
-    margin-top: 28px;
+    logo-template {
+        h1{
+            text-align: center;
+        }
+    }
+
+    search-directive.col-xs-12.col-sm-8.col-md-8 {
+        margin-top: 28px;
+
+        form {
+            text-align: center;
+        }
+    }
+
+    input[type="text"] {
+        width: 200px;
+        height: 30px;
+    }
+
+    input[type="submit"] {
+        display:none;        
+    }
 }
 
 .clearfix:after {
@@ -27,10 +46,70 @@ search-directive.col-xs-12.col-sm-8.col-md-8 {
 /* No media query since this is the default in Bootstrap */
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) {  }
+@media (min-width: @screen-sm-min) { 
+    header {
+        logo-template {
+            h1{
+                text-align: left;
+            }
+        }
+
+        search-directive.col-xs-12.col-sm-8.col-md-8 {
+            margin-top: 28px;
+
+            form {
+                text-align: right;
+            }
+        }
+
+        input[type="submit"] {
+            height: 30px; 
+        }
+    }
+ }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) {  }
+@media (min-width: @screen-md-min) { 
+    header {
+        logo-template {
+            h1{
+                text-align: left;
+            }
+        }
+
+        search-directive.col-xs-12.col-sm-8.col-md-8 {
+            margin-top: 28px;
+
+            form {
+                text-align: right;
+            }
+        }
+        
+        input[type="submit"] {
+            height: 30px; 
+        }
+    }
+ }
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) {  }
+@media (min-width: @screen-lg-min) { 
+    header {
+        logo-template {
+            h1{
+                text-align: left;
+            }
+        }
+
+        search-directive.col-xs-12.col-sm-8.col-md-8 {
+            margin-top: 28px;
+
+            form {
+                text-align: right;
+            }
+        }
+        
+        input[type="submit"] {
+            height: 30px; 
+        }
+    }
+ }

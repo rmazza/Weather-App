@@ -5,8 +5,21 @@ header {
   width: 100%;
   margin: 0 auto;
 }
-search-directive.col-xs-12.col-sm-8.col-md-8 {
+header logo-template h1 {
+  text-align: center;
+}
+header search-directive.col-xs-12.col-sm-8.col-md-8 {
   margin-top: 28px;
+}
+header search-directive.col-xs-12.col-sm-8.col-md-8 form {
+  text-align: center;
+}
+header input[type="text"] {
+  width: 200px;
+  height: 30px;
+}
+header input[type="submit"] {
+  display: none;
 }
 .clearfix:after {
   content: "";
@@ -16,5 +29,47 @@ search-directive.col-xs-12.col-sm-8.col-md-8 {
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 /* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  header logo-template h1 {
+    text-align: left;
+  }
+  header search-directive.col-xs-12.col-sm-8.col-md-8 {
+    margin-top: 28px;
+  }
+  header search-directive.col-xs-12.col-sm-8.col-md-8 form {
+    text-align: right;
+  }
+  header input[type="submit"] {
+    height: 30px;
+  }
+}
 /* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  header logo-template h1 {
+    text-align: left;
+  }
+  header search-directive.col-xs-12.col-sm-8.col-md-8 {
+    margin-top: 28px;
+  }
+  header search-directive.col-xs-12.col-sm-8.col-md-8 form {
+    text-align: right;
+  }
+  header input[type="submit"] {
+    height: 30px;
+  }
+}
 /* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  header logo-template h1 {
+    text-align: left;
+  }
+  header search-directive.col-xs-12.col-sm-8.col-md-8 {
+    margin-top: 28px;
+  }
+  header search-directive.col-xs-12.col-sm-8.col-md-8 form {
+    text-align: right;
+  }
+  header input[type="submit"] {
+    height: 30px;
+  }
+}
