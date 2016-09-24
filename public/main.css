@@ -1,6 +1,9 @@
 body {
   font-family: 'Open Sans', sans-serif;
 }
+.row {
+  margin: 0 0 0 0;
+}
 header {
   width: 100%;
   margin: 0 auto;
@@ -8,15 +11,13 @@ header {
 header logo-template h1 {
   text-align: center;
 }
-header search-directive.col-xs-12.col-sm-8.col-md-8 {
-  margin-top: 28px;
-}
 header search-directive.col-xs-12.col-sm-8.col-md-8 form {
   text-align: center;
 }
 header input[type="text"] {
   width: 200px;
   height: 30px;
+  text-align: center;
 }
 header input[type="submit"] {
   display: none;
@@ -39,7 +40,12 @@ header input[type="submit"] {
   header search-directive.col-xs-12.col-sm-8.col-md-8 form {
     text-align: right;
   }
+  header input[type="text"] {
+    width: 200px;
+    height: 30px;
+  }
   header input[type="submit"] {
+    display: initial;
     height: 30px;
   }
 }
@@ -54,7 +60,12 @@ header input[type="submit"] {
   header search-directive.col-xs-12.col-sm-8.col-md-8 form {
     text-align: right;
   }
+  header input[type="text"] {
+    width: 200px;
+    height: 30px;
+  }
   header input[type="submit"] {
+    display: initial;
     height: 30px;
   }
 }
@@ -69,7 +80,12 @@ header input[type="submit"] {
   header search-directive.col-xs-12.col-sm-8.col-md-8 form {
     text-align: right;
   }
+  header input[type="text"] {
+    width: 200px;
+    height: 30px;
+  }
   header input[type="submit"] {
+    display: initial;
     height: 30px;
   }
 }
