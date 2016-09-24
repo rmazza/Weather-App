@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: 'Open Sans', sans-serif;
 }
@@ -15,7 +18,7 @@ header search-directive.col-xs-12.col-sm-8.col-md-8 form {
   text-align: center;
 }
 header input[type="text"] {
-  width: 200px;
+  width: 20%;
   height: 30px;
   text-align: center;
 }
