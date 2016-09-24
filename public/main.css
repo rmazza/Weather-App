@@ -21,6 +21,9 @@ header input[type="text"] {
   height: 30px;
   text-align: center;
 }
+header input[type="submit"] {
+  display: none;
+}
 .clearfix:after {
   content: "";
   display: table;
@@ -43,6 +46,7 @@ header input[type="text"] {
     height: 30px;
   }
   header input[type="submit"] {
+    display: initial;
     height: 30px;
   }
 }
@@ -61,6 +65,7 @@ header input[type="text"] {
     height: 30px;
   }
   header input[type="submit"] {
+    display: initial;
     height: 30px;
   }
 }
@@ -79,6 +84,7 @@ header input[type="text"] {
     height: 30px;
   }
   header input[type="submit"] {
+    display: initial;
     height: 30px;
   }
 }
