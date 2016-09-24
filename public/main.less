@@ -1,20 +1,36 @@
+@screen-sm-min: 720px;
+@screen-md-min: 900px;
+@screen-lg-min: 1020px;
+
+@mainFontFamily: 'Open Sans', sans-serif;
+
 body {
-  font-family: 'Open Sans', sans-serif;
+    font-family: @mainFontFamily;
 }
+
 header {
-  width: 100%;
-  margin: 0 auto;
+    width: 100%;
+    margin: 0 auto;
 }
+
 search-directive.col-xs-12.col-sm-8.col-md-8 {
-  margin-top: 28px;
+    margin-top: 28px;
 }
+
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
+
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
+
 /* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {  }
+
 /* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {  }
+
 /* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {  }

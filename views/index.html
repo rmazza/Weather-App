@@ -2,44 +2,36 @@
 <html>
 
 <head>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="assets/main.css" />
 </head>
 
 <body ng-app='weather-app'>
 
-<div ng-controller="weatherDataConroller">
-    {{name}}
-</div>
-
-    <!--<div class="header-container">
-        <header>
-            <div class="left-header">
-                <span>Weather</span>
-            </div>
-            <div class="right-header">
-                <div class="searchCity">
-                    <input type="text" id="userInput" placeholder="Enter city name or zip code">
-                    <button id="sub">search</button>
-                </div>
-            </div>
-            <div class="clearfix"></div>
+    <div class="container">
+        <header class="row">
+            <logo-template class="col-xs-12 col-md-4 col-sm-4"></logo-template>
+            <search-directive class="col-xs-12 col-sm-8 col-md-8 text-right"></search-directive>
         </header>
     </div>
-
-
+    <!--
     <div class="container">
         <span id="currentCity"></span><span id="currentDay"></span>
         <span id="currentWeatherIcon"></span><span id="currentTemp"></span>
     </div>-->
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="../node_modules/angular/angular.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
     <script src="../module/weather-app.js"></script>
     <script src="../controllers/weatherController.js"></script>
+    <script src="../directives/logo-directive.js"></script>
+    <script src="../directives/search-directive.js"></script>
 </body>
 
 </html>
