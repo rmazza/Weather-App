@@ -1,7 +1,5 @@
 angular.module('weather-app')
     .controller('searchController', ['$scope', '$log', 'weatherService', function ($scope, $log, weatherService) {
-        //test
-        //test
 
         $scope.weatherData = {};
         $scope.displayLocation = {};
