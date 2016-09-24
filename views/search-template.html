@@ -1,4 +1,4 @@
-<form name="searchForm">
+<form name="searchForm" ng-submit="getSearch(searchValue)">
     <input type="text" class="searchBox col-xs-12 col-md-8" ng-model="searchValue" name="val" placeholder="Enter city name or zip code">
-    <input type='submit' class="col-xs-12 col-md-4" value='search' ng-click="getSearch(searchValue)"/>
+    <input type='submit' class="col-xs-12 col-md-4" value='search' />
 </form>
