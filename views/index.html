@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
@@ -21,6 +21,7 @@
 
     <div class="container">
         <todays-weather></todays-weather>
+        <five-day></five-day>
     </div>
 
 </div>
@@ -32,9 +33,11 @@
     <script src="../module/weather-app.js"></script>
     <script src="../controllers/searchController.js"></script>
     <script src="../services/weather-service.js"></script>
+    <script src="../services/fiveDay-service.js"></script>
     <script src="../directives/logo-directive.js"></script>
     <script src="../directives/search-directive.js"></script>
     <script src="../directives/todaysWeather-directive.js"></script>
+    <script src="../directives/forecastBox-directive.js"></script>
 </body>
 
 </html>

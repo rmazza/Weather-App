@@ -1,8 +1,9 @@
 angular.module('weather-app')
-    .controller('searchController', ['$scope', '$log', 'weatherService', function ($scope, $log, weatherService) {
+    .controller('searchController', ['$scope', '$log', 'weatherService', 'fiveDay', function ($scope, $log, weatherService, fiveDay) {
 
         $scope.weatherData = {};
         $scope.displayLocation = {};
+        $scope.fiveDayForecast = [];
         $scope.searchValue = '';
 
         $scope.getSearch = function (city) {
@@ -14,12 +15,20 @@ angular.module('weather-app')
                     $scope.displayLocation = response.data.current_observation.display_location;
 
 
+                }, function (response) {
+                    $log.log(response.data);
+                });
 
-                    $scope.searchValue = '';
+            fiveDay.getFiveDay(city)
+                .then(function (response) {
+
+                    $scope.fiveDayForecast = response.data.forecast.txt_forecast.forecastday;
 
                 }, function (response) {
                     $log.log(response.data);
                 });
+
+                $scope.searchValue = '';
         };
-        
+
     }]);

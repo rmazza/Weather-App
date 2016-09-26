@@ -1,6 +1,6 @@
 angular.module('weather-app')
     .factory('weatherService', function weatherServiceFactory($http) {
-        //test
+        
 
         const api = "https://api.wunderground.com/api/fa5bdbfe08fb2ddf/conditions/q/";
         const format = ".json";
@@ -13,5 +13,5 @@ angular.module('weather-app')
                         url: api + searchVal + format
                     });
             }
-        };
+        }
     });
