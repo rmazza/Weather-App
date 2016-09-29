@@ -1,7 +1,7 @@
 angular.module('weather-app')
     .service('fiveDay', ['$http', function ($http) {
 
-        const forecastAPI = "http://api.wunderground.com/api/fa5bdbfe08fb2ddf/forecast/q/";
+        const forecastAPI = "http://api.wunderground.com/api/fa5bdbfe08fb2ddf/forecast10day/q/";
         const format = ".json";
 
         this.getFiveDay = function(val) {

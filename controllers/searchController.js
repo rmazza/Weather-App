@@ -3,15 +3,19 @@ angular.module('weather-app')
 
         $scope.weatherData = {};
         $scope.displayLocation = {};
+        $scope.currentObservation = {};
         $scope.fiveDayForecast = [];
         $scope.searchValue = '';
+        $scope.F = '';
 
         $scope.getSearch = function (city) {
+            $scope.F = '&#8457';
 
             weatherService.getToday(city)
                 .then(function (response) {
 
                     $scope.weatherData = response.data;
+                    $scope.currentObservation = response.data.current_observation;
                     $scope.displayLocation = response.data.current_observation.display_location;
 
 

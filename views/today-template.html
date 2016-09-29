@@ -1,1 +1,14 @@
-<h1>{{displayLocation.city}} <small> {{displayLocation.state}} </small></h1>
+<!--<h1>{{displayLocation.city}} <small> {{displayLocation.state}} </small></h1>
+
+<img ng-src="{{currentObservation.icon_url}}" />-->
+
+<div class="col-md-12">
+    <div class="col-md-2">
+        <span class="todaysTemp"> {{ currentObservation.temp_f }} </span>
+    </div>
+    <div class="col-md-2">
+        <img class="todayIcon" ng-src="{{currentObservation.icon_url}}" />
+    </div>
+    <div class="col-md-8">
+    </div>
+</div>

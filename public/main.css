@@ -23,6 +23,7 @@ header input[type="text"] {
 }
 header input[type="submit"] {
   display: none;
+  border: 0px;
 }
 .clearfix:after {
   content: "";
@@ -71,11 +72,15 @@ header input[type="submit"] {
 }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  header {
+    border-bottom: 1px solid #ececec;
+  }
   header logo-template h1 {
     text-align: left;
+    font-size: 75px;
   }
   header search-directive.col-xs-12.col-sm-8.col-md-8 {
-    margin-top: 28px;
+    margin-top: 55px;
   }
   header search-directive.col-xs-12.col-sm-8.col-md-8 form {
     text-align: right;
@@ -86,5 +91,6 @@ header input[type="submit"] {
   header input[type="submit"] {
     display: initial;
     height: 30px;
+    width: 90px;
   }
 }

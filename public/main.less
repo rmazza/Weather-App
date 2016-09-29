@@ -39,6 +39,7 @@ header {
 
     input[type="submit"] {
         display: none;
+        border: 0px;
     }
 }
 
@@ -110,14 +111,17 @@ header {
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: @screen-lg-min) { 
     header {
+        border-bottom: 1px solid #ececec;
+
         logo-template {
             h1{
                 text-align: left;
+                font-size: 75px;
             }
         }
 
         search-directive.col-xs-12.col-sm-8.col-md-8 {
-            margin-top: 28px;
+            margin-top: 55px;
 
             form {
                 text-align: right;
@@ -131,6 +135,7 @@ header {
         input[type="submit"] {
             display:initial;
             height: 30px; 
+            width: 90px;
         }
     }
  }
